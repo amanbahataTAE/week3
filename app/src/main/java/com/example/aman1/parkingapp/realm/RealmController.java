@@ -1,4 +1,4 @@
-package com.example.aman1.parkingapp.data.realm;
+package com.example.aman1.parkingapp.realm;
 
 
 import java.util.ArrayList;

@@ -15,12 +15,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aman1.parkingapp.R;
+import com.example.aman1.parkingapp.data.AppDataManager;
 import com.example.aman1.parkingapp.data.network.model.LocationVO;
-import com.example.aman1.parkingapp.data.realm.RealmController;
-import com.example.aman1.parkingapp.data.realm.RealmReservation;
+import com.example.aman1.parkingapp.realm.RealmController;
+import com.example.aman1.parkingapp.realm.RealmReservation;
 import com.example.aman1.parkingapp.data.network.service.AllLocationApi;
 import com.example.aman1.parkingapp.data.network.service.ServerConnection;
 import com.example.aman1.parkingapp.presenter.GetLocationPresenter;
+import com.example.aman1.parkingapp.views.ui.utils.rx.AppSchedulerProvider;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -37,6 +39,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import io.reactivex.disposables.CompositeDisposable;
 import io.realm.Realm;
 
 /**
