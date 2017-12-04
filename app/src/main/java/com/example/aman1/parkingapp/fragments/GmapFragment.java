@@ -181,7 +181,7 @@ public class GmapFragment extends Fragment implements OnMapReadyCallback {
 
     private void zoomToLocationArea(){
         CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(37.7749, -122.4194));
-        CameraUpdate zoom = CameraUpdateFactory.zoomTo(11);
+        CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
         mGoogleMap.moveCamera(center);
         mGoogleMap.animateCamera(zoom);
     }
