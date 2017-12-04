@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reservation_information">Reservation Information</string>
+    <string name="max_time">Maximum Time</string>
+    <string name="min_time">Minimum time</string>
+    <string name="cost">Cost</string>
+    <string name="pay_and_reserve">Pay and reserve</string>
+</resources>
